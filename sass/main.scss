@@ -14,6 +14,11 @@ body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
+    z-index: 0;
+}
+
+.blue-text {
+    color: #039dff;
 }
 
 // NAVIGATION
@@ -26,11 +31,11 @@ nav {
         transition: color .3s;
     }
 
-    a:hover {
-        color: #039dff;
+    .nav-item.nav-link{
+        font-size: 20px;
     }
 
-    span {
+    a:hover {
         color: #039dff;
     }
 
@@ -61,10 +66,17 @@ nav {
 
     .bg-shadow {
         position: absolute;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, .8);
         z-index: -10;
+    }
+
+    .fas.fa-chevron-down {
+        display: none;
+        align-self: flex-end;
+        color: white;
+        font-size: 22px;
     }
 
     .hero-text {
@@ -75,8 +87,53 @@ nav {
         align-items: center;
         color: white;
 
-        span {
-            color: #039dff;
+        h2 {
+            text-align: center;
+            font-size: 27px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 13px;
+            padding: 0 40px;
+        }
+
+        .btn.btn-outline-light {
+            padding: 5px 35px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+@media(min-width:375px) {
+
+    nav {
+
+        a.navbar-brand,
+        .fas.fa-bars,.nav-item.nav-link {
+            font-size: 25px;
+        }
+
+        button i {
+            padding: 15px;
+        }
+    }
+
+    .home {
+        .hero-text {
+
+            h2 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .btn.btn-outline-light {
+                padding: 7px 37px;
+            }
         }
     }
 }

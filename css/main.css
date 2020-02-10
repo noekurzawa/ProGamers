@@ -15,6 +15,11 @@ body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   background-color: #333;
+  z-index: 0;
+}
+
+.blue-text {
+  color: #039dff;
 }
 
 nav {
@@ -28,11 +33,11 @@ nav i {
   transition: color .3s;
 }
 
-nav a:hover {
-  color: #039dff;
+nav .nav-item.nav-link {
+  font-size: 20px;
 }
 
-nav span {
+nav a:hover {
   color: #039dff;
 }
 
@@ -69,10 +74,18 @@ nav .active {
 
 .home .bg-shadow {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -10;
+}
+
+.home .fas.fa-chevron-down {
+  display: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: white;
+  font-size: 22px;
 }
 
 .home .hero-text {
@@ -93,7 +106,38 @@ nav .active {
   color: white;
 }
 
-.home .hero-text span {
-  color: #039dff;
+.home .hero-text h2 {
+  text-align: center;
+  font-size: 27px;
+}
+
+.home .hero-text p {
+  text-align: center;
+  font-size: 13px;
+  padding: 0 40px;
+}
+
+.home .hero-text .btn.btn-outline-light {
+  padding: 5px 35px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 375px) {
+  nav a.navbar-brand,
+  nav .fas.fa-bars, nav .nav-item.nav-link {
+    font-size: 25px;
+  }
+  nav button i {
+    padding: 15px;
+  }
+  .home .hero-text h2 {
+    font-size: 32px;
+  }
+  .home .hero-text p {
+    font-size: 16px;
+  }
+  .home .hero-text .btn.btn-outline-light {
+    padding: 7px 37px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
