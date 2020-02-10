@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+}
+
+// NAVIGATION
+nav {
+    text-transform: uppercase;
+
+    a,
+    i {
+        color: #fff;
+        transition: color .3s;
+    }
+
+    a:hover {
+        color: #039dff;
+    }
+
+    span {
+        color: #039dff;
+    }
+
+    button i {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .active {
+        color: #039dff;
+    }
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background-image: url('/img/computer-1845880_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -20;
+
+    .bg-shadow {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: -10;
+    }
+
+    .hero-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        span {
+            color: #039dff;
+        }
+    }
+}
