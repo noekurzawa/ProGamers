@@ -24,6 +24,8 @@ body {
 
 nav {
   text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
 }
 
 nav a,
@@ -51,6 +53,10 @@ nav .navbar-brand {
 
 nav .active {
   color: #039dff;
+}
+
+.shadow-navbar {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .home {
@@ -117,6 +123,10 @@ nav .active {
 .home .hero-text .btn.btn-outline-light {
   padding: 5px 35px;
   text-transform: uppercase;
+}
+
+.about .underline {
+  color: #039dff;
 }
 
 @media (min-width: 375px) {

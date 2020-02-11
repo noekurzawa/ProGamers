@@ -1,122 +1,133 @@
+$blue-color: $blue-color;
+
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  background-color: #333;
-  z-index: 0;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    background-color: #333;
+    z-index: 0;
 }
 
 .blue-text {
-  color: #039dff;
+    color: $blue-color;
+}
+
+.wrapper{
+    background-color: red;
 }
 
 // NAVIGATION
 nav {
-  text-transform: uppercase;
+    text-transform: uppercase;
+    transition: background-color .6s;
 
-  a,
-  i {
-    color: #fff;
-    transition: color 0.3s;
-  }
+    a,
+    i {
+        color: #fff;
+        transition: color 0.3s;
+    }
 
-  .nav-item.nav-link {
-    font-size: 20px;
-  }
+    .nav-item.nav-link {
+        font-size: 20px;
+    }
 
-  a:hover {
-    color: #039dff;
-  }
+    a:hover {
+        color: $blue-color;
+    }
 
-  button i {
-    padding: 10px;
-  }
+    button i {
+        padding: 10px;
+    }
 
-  .navbar-brand {
-    font-weight: bold;
-  }
+    .navbar-brand {
+        font-weight: bold;
+    }
 
-  .active {
-    color: #039dff;
-  }
+    .active {
+        color: $blue-color;
+    }
+}
+
+.shadow-navbar {
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 100vh;
-  background-image: url("/img/computer-1845880_1280.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -20;
-
-  .bg-shadow {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: -10;
-  }
-
-  .fas.fa-chevron-down {
-    display: none;
-  }
-
-  .hero-text {
-    position: absolute;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    position: relative;
+    height: 100vh;
+    background-image: url("/img/computer-1845880_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -20;
 
-    h2 {
-      text-align: center;
-      padding: 0 15px;
-      font-size: 25px;
+    .bg-shadow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -10;
     }
 
-    p {
-      text-align: center;
-      font-size: 13px;
-      padding: 0 40px;
+    .fas.fa-chevron-down {
+        display: none;
     }
 
-    .btn.btn-outline-light {
-      padding: 5px 35px;
-      text-transform: uppercase;
+    .hero-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        h2 {
+            text-align: center;
+            padding: 0 15px;
+            font-size: 25px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 13px;
+            padding: 0 40px;
+        }
+
+        .btn.btn-outline-light {
+            padding: 5px 35px;
+            text-transform: uppercase;
+        }
     }
-  }
 }
 
 @media (min-width: 375px) {
-  .home {
-    .hero-text {
-      h2 {
-        font-size: 30px;
-      }
+    .home {
+        .hero-text {
+            h2 {
+                font-size: 30px;
+            }
 
-      p {
-        font-size: 16px;
-      }
+            p {
+                font-size: 16px;
+            }
 
-      .btn.btn-outline-light {
-        padding: 7px 37px;
-      }
+            .btn.btn-outline-light {
+                padding: 7px 37px;
+            }
+        }
     }
-  }
 }
