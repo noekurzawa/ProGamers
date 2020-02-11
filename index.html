@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ProGamers</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./img/favicon-16x16.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"/>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" media="screen and (min-width:576px)" href="./css/small.css" />
-    <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/medium.css" />
-    <link rel="stylesheet" media="screen and (min-width:992px)" href="./css/large.css" />
-  </head>
 
-  <body data-spy="scroll" data-target="#navbar">
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ProGamers</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" media="screen and (min-width:576px)" href="./css/small.css" />
+  <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/medium.css" />
+  <link rel="stylesheet" media="screen and (min-width:992px)" href="./css/large.css" />
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
       <a class="navbar-brand" href="#"
         ><i class="fas fa-headset"></i>pro<span class="blue-text">gamers</span></a
       >
@@ -68,37 +59,63 @@
       <a href="#about"><i class="fas fa-chevron-down"></i></a>
       <div class="bg-shadow"></div>
     </section>
-    <main>
-      <section id="about">
-        <div class="jumbotron jumbotron-fluid">
+  <main>
+    <section id="about" class="scroll-fix">
+      <div class="jumbotron jumbotron-fluid">
         <div class="wrapper">
-            <h2>about</h2>
-            <div class="underline"></div>
+          <h2>about us</h2>
+          <div class="underline"></div>
+          <div class="row">
+            <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation" data-animation='bounceIn' data-delay='.1s'>
+              <p><i class="fas fa-mobile-alt"></i></p>
+              <h3>mobile gaming</h3>
+              <p>We create mobile phone games</p>
+            </div>
+            <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation" data-animation='bounceIn' data-delay='.2s'>
+              <p><i class="fas fa-desktop"></i></p>
+              <h3>desktop gaming</h3>
+              <p>We create pc games</p>
+            </div>
+            <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation" data-animation='bounceIn' data-delay='.3s'>
+              <p><i class="fas fa-mountain"></i></p>
+              <h3>the highest standards</h3>
+              <p>Keeping the highest code standards</p>
+            </div>
+            <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation" data-animation='bounceIn' data-delay='.4s'>
+              <p><i class="fas fa-paw"></i></p>
+              <h3>love with nature</h3>
+              <p>We care about the safety of the environment</p>
+            </div>
+            <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation" data-animation='bounceIn' data-delay='.5s'>
+              <p><i class="fas fa-hamburger"></i></p>
+              <h3>care about people</h3>
+              <p>We like to eat well before proceeding with further tasks</p>
+            </div>
+            <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation" data-animation='bounceIn' data-delay='.6s'>
+              <p><i class="fas fa-glass-cheers"></i></p>
+              <h3>great relationships</h3>
+              <p>We keeping great relationships with customers</p>
+            </div>
           </div>
-      </section>
-    </main>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div style="height: 100vh"></div>
 
-    <script
-      src="https://kit.fontawesome.com/c89b3bee8a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/animation.js"></script>
-    <script src="./js/jquery.waypoints.min"></script>
-    <script src="./js/main.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/c89b3bee8a.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="./js/animation.js"></script>
+  <script src="./js/jquery.waypoints.min"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

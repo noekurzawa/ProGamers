@@ -23,16 +23,34 @@ body {
     color: $blue-color;
 }
 
-.wrapper{
+.wrapper {
     margin: 0 auto;
     width: 80%;
-    background-color: red;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.underline {
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $blue-color;
+}
+
+.scroll-fix::before {
+    display: block;
+    margin-top: -66px;
+    height: 66px;
+    content: "";
 }
 
 // NAVIGATION
 nav {
     text-transform: uppercase;
-    transition: background-color .6s;
+    transition: background-color 0.6s;
 
     a,
     i {
@@ -62,7 +80,7 @@ nav {
 }
 
 .shadow-navbar {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .home {
@@ -76,6 +94,7 @@ nav {
     background-size: cover;
     background-attachment: fixed;
     z-index: -20;
+    overflow: hidden;
 
     .bg-shadow {
         position: absolute;
@@ -116,6 +135,35 @@ nav {
     }
 }
 
+// MAIN
+#about {
+    i {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .aboutus-hover {
+        transition: color .3s;
+        visibility: hidden;
+    }
+
+    .aboutus-hover:hover {
+        color: $blue-color;
+    }
+}
+
+
+
+
 @media (min-width: 375px) {
     .home {
         .hero-text {
@@ -125,10 +173,6 @@ nav {
 
             p {
                 font-size: 16px;
-            }
-
-            .btn.btn-outline-light {
-                padding: 7px 37px;
             }
         }
     }
