@@ -1,4 +1,4 @@
-$blue-color: $blue-color;
+$blue-color: #039dff;
 
 *,
 *::after,
@@ -24,6 +24,8 @@ body {
 }
 
 .wrapper{
+    margin: 0 auto;
+    width: 80%;
     background-color: red;
 }
 
