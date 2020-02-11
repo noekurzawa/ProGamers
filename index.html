@@ -15,12 +15,12 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" media="screen and (min-width:576px)" href="./css/small.css" />
     <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/medium.css" />
@@ -61,15 +61,17 @@
     </nav>
     <section class="home">
       <div class="hero-text">
-        <h2>WELCOME IN PRO<span class="blue-text">GAMERS</span></h2>
-        <p>Place where we create with passion</p>
-        <a class="btn btn-outline-light" href="#about">Go !</a>
+        <h2 class="os-animation" data-animation="bounceInUp" data-delay=".2s">WELCOME IN PRO<span class="blue-text">GAMERS</span></h2>
+        <p class="os-animation" data-animation="bounceInUp" data-delay=".5s">Place where we create with passion</p>
+        <a class="btn btn-outline-light os-animation" href="#about"data-animation="bounceInUp" data-delay=".8s">Go !</a>
       </div>
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
       <div class="bg-shadow"></div>
-      <i class="fas fa-chevron-down"></i>
     </section>
 
-    <section class="about"></section>
+    <div class="test" style="height: 100vh;"></div>
+    <div id="about"></div>
+
     <script
       src="https://kit.fontawesome.com/c89b3bee8a.js"
       crossorigin="anonymous"

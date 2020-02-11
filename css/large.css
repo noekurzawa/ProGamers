@@ -1,4 +1,11 @@
 .home .fas.fa-chevron-down {
+  position: absolute;
   display: block;
+  bottom: 20px;
+  padding-top: 20px;
+  color: white;
+  font-size: 22px;
+  -webkit-animation: bounce 1.6s infinite;
+          animation: bounce 1.6s infinite;
 }
 /*# sourceMappingURL=large.css.map */
