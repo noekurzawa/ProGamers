@@ -11,4 +11,16 @@ nav .nav-item.nav-link {
   -webkit-animation: bounce 1.6s infinite;
           animation: bounce 1.6s infinite;
 }
+
+@media (min-width: 1200px) {
+  #about-hero .jumbotron {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #about-hero .jumbotron {
+    padding: 120px 0;
+  }
+}
 /*# sourceMappingURL=large.css.map */

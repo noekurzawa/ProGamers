@@ -14,16 +14,20 @@ nav {
         color: white;
         animation: bounce 1.6s infinite;
     }
+}
 
-    // .hero-text {
+@media (min-width: 1200px) {
+    #about-hero {
+        .jumbotron {
+            padding: 100px 0;
+        }
+    }
+}
 
-    //     h2 {
-    //         font-size: 35px;
-    //     }
-
-    //     .btn.btn-outline-light {
-    //         padding: 7px 37px;
-    //     }
-    // }
-
+@media (min-width: 1400px) {
+    #about-hero {
+        .jumbotron {
+            padding: 120px 0;
+        }
+    }
 }
