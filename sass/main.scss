@@ -261,6 +261,15 @@ padding-bottom: 20px;
 
 
 
+// OFFER
+#offer{
+    .jumbotron{
+        .price-text.wrapper{
+            margin-top: 30px;
+        }
+    }
+}
+
 @media (min-width: 375px) {
     #about {
         .jumbotron {
