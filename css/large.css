@@ -12,10 +12,6 @@ nav .nav-item.nav-link {
           animation: bounce 1.6s infinite;
 }
 
-.card-deck {
-  display: none;
-}
-
 @media (min-width: 1200px) {
   #about-hero .jumbotron {
     padding: 100px 0;
