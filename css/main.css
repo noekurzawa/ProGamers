@@ -23,6 +23,7 @@ body {
 }
 
 .wrapper {
+  max-width: 2560px;
   margin: 0 auto;
   width: 80%;
 }
