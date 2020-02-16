@@ -314,6 +314,66 @@ nav {
     }
 }
 
+// TEAM
+#team{
+    .jumbotron{
+        position: relative;
+        background-image: url("../team\ img/conference-room-768441_1920.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .team-shadow{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 0;
+            }
+
+        h2{
+            color: #ddd;
+        }
+    }
+
+    .card{
+        transition: transform.3s;
+
+        img{
+            height: 200px;
+            object-fit: cover;
+        }
+
+        i{
+            padding: 10px 20px;
+        }
+
+        .row{
+           margin-left: 0; 
+           margin-right: 0; 
+        }
+    }
+    .card:hover{
+        transform: scale(0.96);
+    }
+
+    .card-body{
+        height: 150px;
+    }
+    
+    .card-title{
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+}
+
+
 @media (min-width: 375px) {
     #about {
         .jumbotron {

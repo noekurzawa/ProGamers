@@ -326,6 +326,68 @@ nav .active {
           transform: scale(1.05);
 }
 
+#team .jumbotron {
+  position: relative;
+  background-image: url("../team img/conference-room-768441_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#team .jumbotron .team-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+#team .jumbotron h2 {
+  color: #ddd;
+}
+
+#team .card {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#team .card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#team .card i {
+  padding: 10px 20px;
+}
+
+#team .card .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#team .card:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+#team .card-body {
+  height: 150px;
+}
+
+#team .card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#team .card-text {
+  font-size: 14px;
+}
+
 @media (min-width: 375px) {
   #about .jumbotron {
     padding: 50px 0;
