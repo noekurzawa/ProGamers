@@ -16,10 +16,22 @@ nav {
     }
 }
 
+#offer {
+    .jumbotron {
+        .offer-wrap {
+            width: 80%;
+        }
+    }
+}
+
 @media (min-width: 1200px) {
     #about-hero {
         .jumbotron {
             padding: 100px 0;
+
+            .offer-wrap {
+                width: 85%;
+            }
         }
     }
 }
@@ -28,6 +40,19 @@ nav {
     #about-hero {
         .jumbotron {
             padding: 120px 0;
+        }
+    }
+}
+
+@media (min-width: 2000px){
+    #about-hero{
+        .jumbotron{
+            padding: 100px 0;
+        }
+    }
+    #offer{
+        .offer-wrap{
+            width: 70%;
         }
     }
 }

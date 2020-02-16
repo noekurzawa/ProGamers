@@ -48,7 +48,7 @@ body {
     content: "";
 }
 
-.visibility{
+.visibility {
     visibility: hidden;
 }
 
@@ -228,24 +228,26 @@ nav {
 }
 
 // PORTFOLIO DESKTOP
-#portfolio{
-    h2{text-align: center;
+#portfolio {
+    h2 {
+        text-align: center;
         text-transform: uppercase;
         font-size: 27px;
     }
 
-    .carousel-item{
+    .carousel-item {
         position: relative;
         height: 600px;
 
-        img{
+        img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
     }
-    .carousel-caption{
+
+    .carousel-caption {
         position: absolute;
         left: 0;
         right: 0;
@@ -254,19 +256,61 @@ nav {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-    .carousel-indicators{
-padding-bottom: 20px;
+    .carousel-indicators {
+        padding-bottom: 20px;
     }
 }
 
-
-
 // OFFER
-#offer{
-    .jumbotron{
-        .price-text.wrapper{
-            margin-top: 30px;
+#offer {
+    .jumbotron {
+        background-color: #f9f9f9;
+
+        .offer-wrap {
+            max-width: 2560px;
+            margin: 0 auto;
+            width: 95%;
         }
+    }
+
+    .price-box {
+        margin: 20px 10px;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        transition: transform .3s;
+
+        h3 {
+            color: $blue-color;
+            text-transform: uppercase;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        i {
+            padding: 0 5px;
+            font-size: 23px;
+        }
+
+        button {
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+
+    .price-text {
+        margin-top: 30px;
+    }
+
+    .price-box:hover {
+        transform: scale(1.05);
     }
 }
 

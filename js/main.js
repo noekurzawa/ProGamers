@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("scroll", addShadow);
 
-  
-  $(document).ready(function() {
+  // Skrypt naprawiający nawigację(zamyka się po kliknięciu w cokolwiek na mobilce)
     $(document).click(function(event) {
       var clickover = $(event.target);
       var _opened = $(".navbar-collapse").hasClass("show");
@@ -20,5 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
         $(".navbar-toggler").click();
       }
     });
-  });
+
+    // slick.js
+    $('.your-class').slick({
+      // setting-name: setting-value
+    });
+
 });

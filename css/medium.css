@@ -1,4 +1,20 @@
 nav .nav-item.nav-link {
   font-size: 23px;
 }
+
+#offer .price-info {
+  font-size: 23px;
+}
+
+#offer .jumbotron .offer-wrap {
+  width: 90%;
+}
+
+#about-hero .jumbotron .row:last-child {
+  margin: 0 auto;
+}
+
+#portfolio .jumbotron .wrapper {
+  width: 90%;
+}
 /*# sourceMappingURL=medium.css.map */

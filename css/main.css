@@ -271,8 +271,59 @@ nav .active {
   padding-bottom: 20px;
 }
 
-#offer .jumbotron .price-text.wrapper {
+#offer .jumbotron {
+  background-color: #f9f9f9;
+}
+
+#offer .jumbotron .offer-wrap {
+  max-width: 2560px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+#offer .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#offer .price-box h3 {
+  color: #039dff;
+  text-transform: uppercase;
+}
+
+#offer .price-box span {
+  font-weight: bold;
+}
+
+#offer .price-box i {
+  padding: 0 5px;
+  font-size: 23px;
+}
+
+#offer .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#offer .price-box .price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#offer .price-text {
   margin-top: 30px;
+}
+
+#offer .price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (min-width: 375px) {
