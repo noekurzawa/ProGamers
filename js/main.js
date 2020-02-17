@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // slick.js
-    $('.your-class').slick({
+    $('.team-carousel').slick({
       // setting-name: setting-value
     });
 
