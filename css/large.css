@@ -2,6 +2,13 @@ nav .nav-item.nav-link {
   font-size: 16px;
 }
 
+.scroll-fix::before {
+  display: block;
+  margin-top: -60px;
+  height: 60px;
+  content: "";
+}
+
 .home .fas.fa-chevron-down {
   position: absolute;
   display: block;
@@ -23,11 +30,20 @@ nav .nav-item.nav-link {
   #about-hero .jumbotron .offer-wrap {
     width: 85%;
   }
+  #team .card-text {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1400px) {
   #about-hero .jumbotron {
     padding: 120px 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  #team .card-text {
+    font-size: 18px;
   }
 }
 

@@ -4,6 +4,13 @@ nav {
     }
 }
 
+.scroll-fix::before {
+    display: block;
+    margin-top: -60px;
+    height: 60px;
+    content: "";
+}
+
 
 .home {
     .fas.fa-chevron-down {
@@ -34,12 +41,25 @@ nav {
             }
         }
     }
+    #team{
+        .card-text{
+           font-size: 16px;
+        }
+    }
 }
 
 @media (min-width: 1400px) {
     #about-hero {
         .jumbotron {
             padding: 120px 0;
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    #team{
+        .card-text{
+           font-size: 18px;
         }
     }
 }

@@ -16,11 +16,19 @@ nav {
     }
 }
 
+#about, #about-hero{
+    .jumbotron {
+        padding: 80px 0;
+    }
+}
 
 #about-hero {
     .jumbotron {
         .row:last-child {
             margin: 0 auto;
+        }
+        .underline{
+            margin-bottom: 50px;
         }
     }
 }
@@ -30,5 +38,11 @@ nav {
         .wrapper {
             width: 90%;
         }
+    }
+}
+
+#team{
+    .card-body{
+        height: 150px;
     }
 }
