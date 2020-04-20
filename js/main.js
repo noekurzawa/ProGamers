@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".navbar");
 
   function addShadow() {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", addShadow);
 
   // Skrypt naprawiający nawigację(zamyka się po kliknięciu w cokolwiek na mobilce)
-  $(document).click(function(event) {
+  $(document).click(function (event) {
     var clickover = $(event.target);
     var _opened = $(".navbar-collapse").hasClass("show");
     if (_opened === true && !clickover.hasClass("navbar-toggler")) {
@@ -29,27 +29,26 @@ document.addEventListener("DOMContentLoaded", function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
-      
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
 
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3
-        }
+          slidesToShow: 3,
+        },
       },
 
       {
         breakpoint: 1600,
         settings: {
-          slidesToShow: 4
-        }
-      }
-    ]
+          slidesToShow: 4,
+        },
+      },
+    ],
   });
 });
